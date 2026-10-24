@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Prompt Slim",
+    "description": "Compress the tool-definition block re-sent with every model request"
+  }
+}

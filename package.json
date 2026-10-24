@@ -1,0 +1,32 @@
+{
+  "name": "dsh-prompt-slim",
+  "version": "0.1.0",
+  "description": "Compress the assembled tool-definition block that is re-sent with every model request",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/compress.js",
+    "cordis.patch.yml",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "node test/measure.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "4.0.5",
+    "@deepseek-ai/dsh-system-prompt": "0.2.1-rc.1",
+    "@deepseek-ai/dsh-tools": "0.2.1-rc.1",
+    "@deepseek-ai/schemastery": "3.18.5"
+  }
+}

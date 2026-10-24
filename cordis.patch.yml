@@ -1,0 +1,3 @@
+- insert:
+    - id: prompt-slim
+      name: dsh-prompt-slim
