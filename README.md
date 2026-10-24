@@ -46,10 +46,11 @@ DSH 在每次请求前把当前可见的 80+ 个工具（名称、描述、完�
 
 ## 安装
 
-1. 把本目录放到任意位置，链进 profile：
+1. 取到本目录，链进 profile：
 
    ```sh
-   ln -s /path/to/dsh-prompt-slim ~/.dsh/profiles/web/node_modules/dsh-prompt-slim
+   git clone https://github.com/wsxuyue/dsh-prompt-slim ~/dsh-prompt-slim
+   ln -s ~/dsh-prompt-slim ~/.dsh/profiles/web/node_modules/dsh-prompt-slim
    ```
 
 2. 在 `~/.dsh/profiles/web/cordis.patch.yml` 末尾加上面那段 `insert`。
